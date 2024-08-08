@@ -5,8 +5,12 @@ pipeline {
             args '-p 3000:3000'
         }
     }
+
+    // environment variables are defined here 
     environment {
         CI = 'true'
+        // $DB_USER = 'myuser'
+
     }
     stages {
         stage('Build') {
